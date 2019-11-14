@@ -1,7 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
+import xlwt
 
 def URL_creator(days, tag, tag_2 = ''):
+	"""генерирует правильную ссылку, ест параметры: 
+	days - за сколько дней собирать данные (1, 3, 7, 30)
+	tag и tag_2 - строки в виде поисковых тегов, пример "Python" "developer" """
 	if tag_2:
 		URL = 'https://jobs.tut.by/search/vacancy?search_period={x}&clusters=true&area=1002&currency_code=BYR&text={y}+{z}&enable_snippets=true'.format(x = days, y = tag, z = tag_2)
 	if not tag_2:
@@ -10,7 +14,6 @@ def URL_creator(days, tag, tag_2 = ''):
 
 
 headers = {'user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/78.0.3904.97 Chrome/78.0.3904.97 Safari/537.36'}
-URL = 'https://jobs.tut.by/search/vacancy?search_period=3&clusters=true&area=1002&currency_code=BYR&text=Python&enable_snippets=true'
 
 def search(URL):
 
@@ -42,5 +45,24 @@ def search(URL):
 
 	return data		
 
+def write(data:list):
+	row = 0
+	column = 0
 
-print(len(search(URL_creator("3", "Java"))))
+	book = xlwt.Workbook(encoding="utf-8")
+
+	# Add a sheet to the workbook 
+	sheet1 = book.add_sheet("list-1") 
+
+	for i in data:
+		i['title']
+
+	# Write to the sheet of the workbook 
+	sheet1.write(row, column, "This is the First Cell of the First Sheet") 
+
+	# Save the workbook 
+	book.save("spreadsheet.xls")
+		
+
+
+write(search(URL_creator("3", "Java")))
