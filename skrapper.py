@@ -43,7 +43,7 @@ def urls_list(agent, days:int, tag:str, tag_2 = ''):
 
 
 
-def search_jobs_tut_by(agent:str, URLS:list):
+def vacancy_parse(agent:str, URLS:list):
 	'''Cобирает информацию с сайта jobs.tut.by
 	Принимает два параметра: 
 	1) URLS - список урлов. 
@@ -93,7 +93,7 @@ def search_jobs_tut_by(agent:str, URLS:list):
 
 
 
-def name_changer(days:int, tag:str, tag_2=''):
+def unique_name(days:int, tag:str, tag_2=''):
 	"""генерирует правильную имя для будущего документа эксель, ест параметры: 
 	days - за сколько дней собирать данные (1, 3, 7, 30)
 	tag и tag_2 - строки в виде поисковых тегов, пример "Python" "developer" """
@@ -106,7 +106,7 @@ def name_changer(days:int, tag:str, tag_2=''):
 
 
 
-def exele_doc(data:list, name:str):
+def excel_save(data:list, name:str):
 	'''eats list with dicts and returns exele document'''
 	row = 0
 	column = 0
@@ -129,6 +129,6 @@ def exele_doc(data:list, name:str):
 
 	book.save("{x}.xls".format(x = name))
 
-exele_doc(search_jobs_tut_by(my, urls_list(my, 1, "Python", "разработчик")), name_changer(1, "Python", "разработчик"))
+excel_save(vacancy_parse(my, urls_list(my, 1, "Python", "разработчик")), unique_name(1, "Python", "разработчик"))
 
 
