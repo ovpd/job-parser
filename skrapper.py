@@ -4,11 +4,6 @@ import xlwt
 from collections import OrderedDict
 
 
-
-my = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) snap Chromium/78.0.3904.97 Chrome/78.0.3904.97 Safari/537.36'
-
-
-
 def urls_list(agent, days:int, tag:str, tag_2 = ''):
 	"""Возвращает список из ссылок для парсинга данных с сайта jobs.tut.by
 	Принимает параметры: 
@@ -129,7 +124,7 @@ def excel_save(data:list, name:str):
 
 	book.save("{x}.xls".format(x = name))
 
-excel_save(vacancy_parse(my, urls_list(my, 1, "Python", "разработчик")), unique_name(1, "Python", "разработчик"))
+
 
 
 
