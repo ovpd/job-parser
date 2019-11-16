@@ -99,7 +99,7 @@ def unique_name(days:int, tag:str, tag_2=''):
 	tag и tag_2 - строки в виде поисковых тегов, пример "Python" "developer" """
 	
 	if not tag_2:
-		name = "TUTBY_" + str(days) + "day(s)" + "_" + str(tag).lower()
+		name = "TUTBY_" + str(days) + "day(s)" + "_" + tag.lower()
 	else:
 		name = "TUTBY_" + str(days) + "day(s)" + "_" + tag.lower() + "_" + tag_2.lower()
 	return name
@@ -130,5 +130,6 @@ def excel_save(data:list, name:str):
 	book.save("{x}.xls".format(x = name))
 
 excel_save(vacancy_parse(my, urls_list(my, 1, "Python", "разработчик")), unique_name(1, "Python", "разработчик"))
+
 
 
