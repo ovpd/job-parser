@@ -21,7 +21,8 @@ requests, beautifulsoup4, tkinter, xlwt
 ## Внутри XLS-документа
 
 ![Главное окно](https://sun9-62.userapi.com/c204724/v204724522/259a5/lqxCQ558e4s.jpg)
-Колонки:
+
+### Колонки:
 + вакансия
 + работодатель
 + местонахождение 
