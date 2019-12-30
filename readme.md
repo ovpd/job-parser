@@ -1,5 +1,5 @@
 # Парсер вакансий jobs.tut.by
-
+***
 ![Главное окно](https://sun9-59.userapi.com/c206528/v206528074/24f4e/6TBa6EizkFM.jpg)
 ⠀
 *** 
@@ -16,9 +16,9 @@ requests, beautifulsoup4, tkinter, xlwt
 *** 
 ## Уникальное имя файла
 ⠀
-> ⠀
->⠀⠀⠀⠀![Файлу дается уникальное название](https://sun9-56.userapi.com/c206628/v206628074/25b8f/ETTPGcai5F0.jpg)
-> ⠀
+ ⠀
+![Файлу дается уникальное название](https://sun9-56.userapi.com/c206628/v206628074/25b8f/ETTPGcai5F0.jpg)
+ ⠀
 
 *** 
 ## Внутри XLS-документа
