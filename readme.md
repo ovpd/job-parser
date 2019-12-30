@@ -1,4 +1,4 @@
-#Парсер вакансий на beautifulsoup в форме оконной программы на Tkinter.
+Парсер вакансий на beautifulsoup в форме оконной программы на Tkinter.
 
 Cайт для парсинга: https://jobs.tut.by/ 
 
