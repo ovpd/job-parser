@@ -1,6 +1,6 @@
 # Парсер вакансий
 jobs.tut.by
-⠀
+
 ![Главное окно](https://sun9-59.userapi.com/c206528/v206528074/24f4e/6TBa6EizkFM.jpg)
 ⠀
 
