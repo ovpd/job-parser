@@ -17,7 +17,7 @@ requests, beautifulsoup4, tkinter, xlwt
 *** 
 ## Уникальное имя
 > 
-> ![Файлу дается уникальное название](https://sun9-56.userapi.com/c206628/v206628074/25b8f/ETTPGcai5F0.jpg)
+![Файлу дается уникальное название](https://sun9-56.userapi.com/c206628/v206628074/25b8f/ETTPGcai5F0.jpg)
 > 
 *** 
 ## Внутри XLS
